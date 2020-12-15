@@ -6,7 +6,6 @@ import { getToken, clearToken, hitAPI } from "./api";
 import Auth from "./components/Auth";
 
 const App = () => {
-  // a piece of state that represents the status of the current user
   const [isLoggedIn, setIsLoggedIn] = useState(!!getToken());
   const [postList, setPostList] = useState([]);
 
